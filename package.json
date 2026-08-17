@@ -1,0 +1,45 @@
+{
+  "name": "dsh-guard",
+  "version": "1.0.0",
+  "description": "Startup watchdog + auto-rollback for DeepSeek Harness (dsh). If `dsh web` fails to boot after installing a plugin, it disables the offending plugin (keeps it downloaded) and retries — so a bad plugin never bricks your profile.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "yanwei999999",
+    "email": "yanwei999999@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanwei999999/dsh-guard.git"
+  },
+  "homepage": "https://github.com/yanwei999999/dsh-guard",
+  "bugs": {
+    "url": "https://github.com/yanwei999999/dsh-guard/issues"
+  },
+  "bin": {
+    "dsh-guard": "./dsh-guard.mjs"
+  },
+  "files": [
+    "dsh-guard.mjs",
+    "dsh-guard.cmd",
+    "install.ps1",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "deepseek",
+    "plugin",
+    "watchdog",
+    "rollback",
+    "cli"
+  ],
+  "dependencies": {
+    "js-yaml": "^4.2.0"
+  }
+}
